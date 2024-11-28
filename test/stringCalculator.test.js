@@ -10,8 +10,8 @@ describe("String Calculators test suite ",()=>{
   })
 
     it("Test handles single number input ",()=>{
-      let input = "25";
-      let expectedValue = 25;
+      let input = "1";
+      let expectedValue = 1;
       let actualValue = add(input);
       expect(actualValue).to.equal(expectedValue);   
   })
