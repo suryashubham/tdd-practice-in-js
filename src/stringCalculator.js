@@ -1,15 +1,20 @@
 //code here
+function hasCharacter(str) {
+  return /[^\s]/.test(str); // Checks for any non-whitespace character
+}
+
+function isLengthOne(str) {
+  return str.length === 1;
+}
+
+function isEmpty(str) {
+  return str === "";
+}
 
 function add(inputValue){
-  if(inputValue === ""){
-    return 0;
-  }
-  if(inputValue.length === 1){
-    return parseInt(inputValue);
-  }
-  if(/[^\s]/.test(inputValue)){
-      return 0;
-  }
+  isEmpty(inputValue);
+  isLengthOne(inputValue);
+  hasCharacter(inputValue);
   return;
 }
 
