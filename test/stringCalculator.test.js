@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const { add } = require('../src/stringCalculator');
 
-describe("String Calculators test suite",()=>{
+describe("String Calculators test suite ",()=>{
   it("Test handles empty string input",()=>{
       let input = "";
       let expectedValue = 0;
