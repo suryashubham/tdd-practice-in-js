@@ -7,6 +7,9 @@ function add(inputValue){
   if(inputValue.length === 1){
     return parseInt(inputValue);
   }
+  if(/[^\s]/.test(str)){
+      return 0;
+  }
   return;
 }
 
